@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverser une chaîne de caractère</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        EXERCICE JAVASCRIPT #1
+    </header>
+    <section>
+        <h1>Inversion d'une Chaîne de caractère</h1>
+        <p>
+            Consigne: Créer une fonction qui remplace une chaîne de caractère par cette même chaîne inversée (visible
+            dans la console).
+        </p>
+        <h3>Exemple:</h3><br>
+        <code id="text">
+            "Salut John !"
+        </code>
+        devient
+        <code>
+            "!nhoJ tulaS"
+        </code>
+        <div>
+            <h2>ASTUCES</h2>
+            <button onclick=displayTips()>CLIQUEZ ICI POUR AVOIR DE L'AIDE</button>
+            <div id="tips">
+                <h4> Pour faire la mise en place de cette fonction, vous devrez utiliser plusieurs méthodes:</h4>
+                <ul>
+                    <li>La méthode <a target="_blank"
+                            href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/split">SPLIT</a>
+                    </li>
+                    <li>La méthode <a target="_blank"
+                            href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/reverse">REVERSE</a>
+                    </li>
+                    <li>La méthode <a target="_blank"
+                            href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/join">JOIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h2>BONUS:</h2>
+        <p>Pour ceux qui veulent aller plus loin, vous pouvez créer la même fonction en l'appliquant à l'input
+            ci-dessous. C'est-à-dire que vous devez taper la chaîne de caractère dans l'input et en appuyant sur
+            VALIDER, la chaîne inversée doit apparaître en dessous</p>
+        <form id="form">
+            <label for="">Tapez la chaîne de caractère:</label>
+            <input id="input" type="text">
+            <button type="submit" id="button">VALIDER</button>
+        </form>
+        <div>
+            <h3>Résultat :</h3>
+            <p id="result"></p>
+        </div>
+    </section>
+    <footer>
+        Fait avec ❤️ & 🩸- ARINFO | I-Maginer - 2020
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const displayTips = () => {
+            document.getElementById('tips').style.display = 'block'
+        }
+    </script>
+</body>
+</html>
