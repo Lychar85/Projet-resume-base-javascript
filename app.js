@@ -13,11 +13,11 @@ const
     boxbtntitre = document.getElementById("btn4"),
     boxtitre = document.getElementById("box3");
 
-    //navigation = document.getElementById("li");
+//navigation = document.getElementById("li");
 
-    //Aplication
+//Aplication
 
-    display()
+display()
 
 function display() {
 
@@ -38,38 +38,53 @@ function display() {
 //style
 
 //body
-function backgroundGrey() {
-    body.style.backgroundColor = "grey";
+function backgroundGrey(e) {
+    if(body.style.backgroundColor === "grey") {
+        body.style.backgroundColor = "white"
+    }
+        else body.style.backgroundColor = "grey"
+    
 }
 //box 1
 function backgroundboxred() {
-    boxred.style.backgroundColor = "red"
+    if(boxred.style.backgroundColor === "red") {
+        boxred.style.backgroundColor = "white"
+    }
+        else boxred.style.backgroundColor = "red"
 }
 //box 2 
 function ajoutText() {
-    boxtxt.innerHTML = `<p>Salut l'équipe</p>`
+    if(boxtxt.innerHTML === `<p>Salut l'équipe</p>`) {
+        boxtxt.innerHTML = ` `
+    }
+        else boxtxt.innerHTML = `<p>Salut l'équipe</p>`
 }
 //box 3 
 function ajoutTitre() {
-    boxtitre.innerHTML = `<h1>John Forever</h1>`
-}/*
+
+    if(boxtitre.innerHTML === `<h1>John Forever</h1>`) {
+        boxtitre.innerHTML = ` `
+    }
+    else boxtitre.innerHTML = `<h1>John Forever</h1>`
+}
+/*
 //navigation
 function hoverNav(e) {
     navigation.style.backgroundColor = "Blue"
 }
 */
-function mouseover(){
+function mouseover() {
     let li = document.getElementsByTagName('li')
-    if(document.getElementsByTagName('li') === "LI"){
+    if (document.getElementsByTagName('li') === "LI") {
         target.style.color = "green"
     }
 }
 let list = document.getElementById('list');
-list.addEventListener ('mouseover', function (e){
-    if(e.target.nodeName === "LI"){
-    e.target.style.color = "green";
+list.addEventListener('mouseover', function (e) {
+    if (e.target.nodeName === "LI") {
+        e.target.style.color = "green";
     }
 })
-list.addEventListener ('mouseout', function (e){
+list.addEventListener('mouseout', function (e) {
     e.target.style.color = "";
 })
